@@ -1,0 +1,7 @@
+services:
+  sonarr:
+    ports:
+      - "8989:8989"
+  radarr:
+    ports:
+      - "7878:7878"

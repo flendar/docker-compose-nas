@@ -180,12 +180,12 @@ services:
     image: lscr.io/linuxserver/qbittorrent:libtorrentv1
     container_name: qbittorrent
     ports:
-      - "8188:8188"
+      - "8080:8080"
     environment:
       - PUID=${USER_ID}
       - PGID=${GROUP_ID}
       - TZ=${TIMEZONE}
-      - WEBUI_PORT=8188
+      - WEBUI_PORT=8080
       - DOCKER_MODS=ghcr.io/gabe565/linuxserver-mod-vuetorrent
     volumes:
       - ${CONFIG_ROOT:-.}/qbittorrent:/config

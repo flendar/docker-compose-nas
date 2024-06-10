@@ -29,6 +29,8 @@ services:
       - homepage.widget.type=sonarr
       - homepage.widget.url=http://sonarr:8989/sonarr
       - homepage.widget.key=${SONARR_API_KEY}
+    ports:
+      - "8989:8989"
   radarr:
     image: lscr.io/linuxserver/radarr
     container_name: radarr

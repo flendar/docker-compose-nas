@@ -179,8 +179,6 @@ services:
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:libtorrentv1
     container_name: qbittorrent
-    ports:
-      - "8080:8080"
     environment:
       - PUID=${USER_ID}
       - PGID=${GROUP_ID}
